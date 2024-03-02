@@ -1,17 +1,79 @@
-/* At Health Lync, we are committed to supporting nurse practitioners and physician assistants in building successful medical practices. With years of experience in the healthcare industry, our team of experts understands the unique challenges */
+/* scolvin3 (web_design_work) */
+
+position: relative;
+width: 1920px;
+height: 6955px;
+
+background: #FFFFFF;
+
+/* Group 1413374114 */
 
 position: absolute;
-width: 543px;
-height: 210px;
-left: 370px;
-top: 5375px;
+width: 420px;
+height: 489px;
+left: 300px;
+top: 1968px;
 
-font-family: "Inter";
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 42px;
-/* or 191% */
+/* Rectangle 8799 */
 
-/* Color Plate/03 */
-color: #545454;
+position: absolute;
+width: 420px;
+height: 489px;
+left: calc(50% - 420px/2 - 450px);
+top: 1968px;
+
+background: #FFFFFF;
+box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.06);
+border-radius: 20px;
+
+/* Group 1413374121 */
+
+position: absolute;
+width: 68px;
+height: 68px;
+left: 972px;
+top: 2490px;
+/* Group 1413374121 */
+
+position: absolute;
+width: 68px;
+height: 68px;
+left: 972px;
+top: 2490px;
+
+
+
+/* Ellipse 53 */
+
+position: absolute;
+width: 68px;
+height: 68px;
+left: calc(50% - 68px/2 + 46px);
+top: 2490px;
+
+/* Color Plate/01 */
+background: #3DD9F5;
+
+
+/* Frame */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 1018px;
+top: 2512px;
+
+transform: matrix(-1, 0, 0, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 87.5%;
+right: -62.5%;
+top: 18.75%;
+bottom: 18.75%;
+
+/* Color Plate/04 */
+border: 1.5px solid #2A2A2A;
+transform: matrix(-1, 0, 0, 1, 0, 0);
