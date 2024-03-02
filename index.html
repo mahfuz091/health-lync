@@ -1,665 +1,821 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Lync</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Health Lync</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
+  <body>
+    <header>
+      <!-- Notification Bar  -->
 
-<body>
-  <header>
-    <!-- Notification Bar  -->
+      <div class="topbar d-none d-md-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 contact-top">
+              <a href=""
+                ><img
+                  src="assets/images/phone.png"
+                  alt="phone-icon"
+                />419-388-5409</a
+              >
+              <a href=""
+                ><img
+                  src="assets/images/email.png"
+                  alt=""
+                />healthlyncllc@gmail.com</a
+              >
+            </div>
+            <div class="col-6">
+              <div class="social-icon text-end">
+                <a href="">
+                  <div><img src="assets/images/facebook.svg" alt="" /></div>
+                </a>
+                <a href="">
+                  <div>
+                    <img src="assets/images/002-twitter 1.svg" alt="" />
+                  </div>
+                </a>
+                <a href="">
+                  <div><img src="assets/images/in.svg" alt="" /></div>
+                </a>
+                <a href="">
+                  <div>
+                    <img src="assets/images/002-linkedin 1.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <div class="topbar">
+      <!-- Navbar -->
+
+      <nav class="navbar">
+        <div class="container">
+          <a href="" class="main-logo">
+            <img src="assets/images/main-logo.png" alt="" />
+          </a>
+          <ul class="menu-items d-none d-md-flex">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">About Us</a></li>
+            <li class="menu-item"><a href="">Our Services</a></li>
+            <li class="menu-item"><a href="">Compliance</a></li>
+            <li class="menu-item"><a href="">Pricing</a></li>
+            <li class="menu-item"><a href="">Resources</a></li>
+          </ul>
+          <button class="thm-btn d-none d-md-block">
+            <a href=""
+              >Free Consultation
+              <img src="assets/images/arrowupright.png" alt=""
+            /></a>
+          </button>
+          <button
+            class="d-md-none offcanvas-btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5> -->
+          <img src="assets/images/main-logo.png" alt="" />
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="menu-items">
+            <li class="menu-item"><a href="">Home</a></li>
+            <li class="menu-item"><a href="">About Us</a></li>
+            <li class="menu-item"><a href="">Our Services</a></li>
+            <li class="menu-item"><a href="">Compliance</a></li>
+            <li class="menu-item"><a href="">Pricing</a></li>
+            <li class="menu-item"><a href="">Resources</a></li>
+          </ul>
+          <button class="thm-btn">
+            <a href=""
+              >Free Consultation
+              <img src="assets/images/arrowupright.png" alt=""
+            /></a>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner Section start -->
+
+    <section class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-6 contact-top">
-            <a href=""><img src="assets/images/phone.png" alt="phone-icon" />419-388-5409</a>
-            <a href=""><img src="assets/images/email.png" alt="" />healthlyncllc@gmail.com</a>
-          </div>
-          <div class="col-6">
-            <div class="social-icon text-end">
-              <a href="">
-                <div><img src="assets/images/facebook.svg" alt="" /></div>
-              </a>
-              <a href="">
-                <div>
-                  <img src="assets/images/002-twitter 1.svg" alt="" />
-                </div>
-              </a>
-              <a href="">
-                <div><img src="assets/images/in.svg" alt="" /></div>
-              </a>
-              <a href="">
-                <div>
-                  <img src="assets/images/002-linkedin 1.svg" alt="" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Navbar -->
-
-    <nav class="navbar">
-      <div class="container">
-        <a href="" class="main-logo">
-          <img src="assets/images/main-logo.png" alt="" />
-        </a>
-        <ul class="menu-items">
-          <li class="menu-item"><a href="">Home</a></li>
-          <li class="menu-item"><a href="">About Us</a></li>
-          <li class="menu-item"><a href="">Our Services</a></li>
-          <li class="menu-item"><a href="">Compliance</a></li>
-          <li class="menu-item"><a href="">Pricing</a></li>
-          <li class="menu-item"><a href="">Resources</a></li>
-        </ul>
-        <button class="thm-btn">
-          <a href="">Free Consultation
-            <img src="assets/images/arrowupright.png" alt="" /></a>
-        </button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- banner Section start -->
-
-  <section class="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2 class="banner-title">
-            Elevate Your Medical Practice with Expert Guidance
-          </h2>
-          <p class="banner-desc">
-            Welcome to Health Lync, where we specialize in medical practice
-            development for nurse practitioners and physician assistants
-          </p>
-          <a href="" class="thm-btn">Get Started <img src="assets/images/arrowupright.png" alt="" /></a>
-        </div>
-        <div class="col-lg-6">
-          <div class="banner-img position-relative">
-            <img class="banner-img-1" src="assets/images/banner-img-1.png" alt="" />
-            <img class="banner-img-2" src="assets/images/banner-img-2.png" alt="" />
-            <img class="banner-img-3" src="assets/images/play.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- About section -->
-
-
-  <section class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <img src="assets/images/about-img.png" alt="" />
-        </div>
-        <div class="col-lg-6">
-          <h3 class="about-title">Learn About Health Lync</h3>
-          <p class="about-desc">
-            At Health Lync, we are committed to supporting nurse practitioners
-            and physician assistants in building successful medical practices.
-            With years of experience in the healthcare industry, our team of
-            experts understands the unique challenges and opportunities faced
-            by these professionals.
-          </p>
-          <a href="" class="thm-btn">Learn More <img src="assets/images/arrowupright.png" alt="" /></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Servivce Section -->
-
-  <section class="service">
-    <div class="container">
-      <h4 class="service-sub-title">Our Services</h4>
-      <h2 class="service-title">
-        A Proactive Approach to Healthcare Quality Improvement
-      </h2>
-
-    </div>
-  </section>
-  <section class="container mt-220">
-    <div class=" service-swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-
-        <div class="swiper-slide">
-          <img src="assets/images/002-healthcare 1.png" alt="" />
-          <h4>Healthcare Compliance</h4>
-          <p>
-            We conduct a comprehensive assessment of your practice to
-            identify areas for improvement.
-          </p>
-          <a href="" class="thm-btn-2">Read More <img src="assets/images/arrow-blue.png" alt="" /></a>
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/007-marketing 1.png" alt="" />
-          <h4>Marketing the Practice</h4>
-          <p>
-            Based on the assessment, we develop a tailored strategy to optimize your practice's performance.
-          </p>
-          <a href="" class="thm-btn-2">Read More <img src="assets/images/arrow-blue.png" alt="" /></a>
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/images/010-tax 1.png" alt="" />
-          <h4>Financial Projections</h4>
-          <p>
-            Our team works closely with you to implement the strategy, providing guidance & support every step of the
-            way.
-          </p>
-          <a href="" class="thm-btn-2">Read More <img src="assets/images/arrow-blue.png" alt="" /></a>
-        </div>
-
-
-
-      </div>
-    </div>
-    <div class="swiper-btn-group">
-      <div class="service-swiper-prev button-prev"><img src="assets/images/left.png" alt=""></div>
-      <div class="service-swiper-next button-next"><img src="assets/images/right.svg" alt=""></div>
-    </div>
-  </section>
-  <!-- Expert Section -->
-
-  <section class="expert">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <h2 class="expert-title">
-            Expert Support for Medical Practice Development
-          </h2>
-          <p class="expert-desc">
-            With years of experience in the healthcare industry, our team of
-            experts understands the unique challenges and opportunities
-          </p>
-          <div>
-            <div class="expert-content">
-              <div class="img-container">
-                <img src="assets/images/001-connect 1.png" alt="" />
-              </div>
-              <div>
-                <h5>Connect</h5>
-                <p>Schedule your free consultation to discuss your goals.</p>
-              </div>
-            </div>
-            <div class="expert-content">
-              <div class="img-container">
-                <img src="assets/images/005-project-plan 1.png" alt="" />
-              </div>
-              <div>
-                <h5>Get a Plan</h5>
-                <p>
-                  We propose a custom plan to help you gain control of your
-                  business.
-                </p>
-              </div>
-            </div>
-            <div class="expert-content">
-              <div class="img-container">
-                <img src="assets/images/002-market-analysis 1.png" alt="" />
-              </div>
-              <div>
-                <h5>Thrive</h5>
-                <p>
-                  Our team helps you achieve your goals and enjoy a work-life
-                  balance.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6"></div>
-      </div>
-    </div>
-  </section>
-  <!-- Practice Section -->
-  <section class="practice">
-    <div class="container">
-      <h2 class="title">
-        Nurse Practitioner & Physician Assistant Practice Specialists
-      </h2>
-      <a href="" class="thm-btn">Book A consultation <img src="assets/images/arrowupright.png" alt="" /></a>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="practice-card">
-            <div class="img-container">
-              <img src="assets/images/doctor1.png" alt="" />
-            </div>
-            <div>
-              <h5>Solo Practice</h5>
-              <p>
-                Hospital systems can benefit from our compliance auditing
-                solutions for tracking risk and ensuring compliance.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="practice-card">
-            <div class="img-container">
-              <img src="assets/images/group-people.png" alt="" />
-            </div>
-            <div>
-              <h5>Group Practice</h5>
-              <p>
-                Hospital systems can benefit from our compliance auditing
-                solutions for tracking risk and ensuring compliance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Resources -->
-
-  <section class="resources">
-    <div class="container">
-      <div class="header">
-        <h3 class="title">Our Recent Resources</h3>
-        <a href="" class="thm-btn">Book A consultation <img src="assets/images/arrowupright.png" alt=""></a>
-      </div>
-      <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Increase Efficiency
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <a href="" class="thm-btn">Learn More <img src="assets/images/arrowupright.png"
-                      alt=""></a><!-- /.thm-btn -->
-                </div>
-                <div class="col-lg-6">
-                  <img class="accordion-img" src="assets/images/image 1946.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Reduce Compliance Risk
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <a href="" class="thm-btn">Learn More <img src="assets/images/arrowupright.png"
-                      alt=""></a><!-- /.thm-btn -->
-                </div>
-                <div class="col-lg-6">
-                  <img class="accordion-img" src="assets/images/image 1946.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Protect Providers
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <a href="" class="thm-btn">Learn More <img src="assets/images/arrowupright.png"
-                      alt=""></a><!-- /.thm-btn -->
-                </div>
-                <div class="col-lg-6">
-                  <img class="accordion-img" src="assets/images/image 1946.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Risk Based Auditing
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <div class="accordion-content">
-                    <ul>
-                      <li>
-                        Coding & Documentation
-                      </li>
-                    </ul>
-                    <p>Audits protect revenue and reduce vulnerability.</p>
-                  </div>
-                  <a href="" class="thm-btn">Learn More <img src="assets/images/arrowupright.png"
-                      alt=""></a><!-- /.thm-btn -->
-                </div>
-                <div class="col-lg-6">
-                  <img class="accordion-img" src="assets/images/image 1946.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Client-section -->
-
-  <section class="client">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <h4 class="title">Our Client Says Their Satisfaction</h4>
-        <div class="button-group d-flex gap-24">
-          <div class="button-prev">
-            <img src="assets/images/left.png" alt="" />
-          </div>
-          <div class="button-next">
-            <img src="assets/images/right.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="client-swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <p class="client-message">
-              At Health Lync, we are committed to supporting nurse
-              practitioners and physician assistants in building successful
-              medical practices. With years of experience in the healthcare
-              industry, our team of experts understands the unique challenges
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center client-details">
-                <img src="assets/images/Ellipse 3892.png" alt="" />
-                <div class="client-info">
-                  <h6>Jenny Wilson</h6>
-                  <p>Jenny Wilson</p>
-                </div>
-              </div>
-              <img src="assets/images/image 1947.png" alt="" />
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <p class="client-message">
-              At Health Lync, we are committed to supporting nurse
-              practitioners and physician assistants in building successful
-              medical practices. With years of experience in the healthcare
-              industry, our team of experts understands the unique challenges
-            </p>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex justify-content-between align-items-center client-details">
-                <img src="assets/images/Ellipse 3892.png" alt="" />
-                <div class="client-info">
-                  <h6>Jenny Wilson</h6>
-                  <p>Jenny Wilson</p>
-                </div>
-              </div>
-              <img src="assets/images/image 1947.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- newsletter -->
-
-  <section class="newsletter">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="left">
-            <img src="assets/images/Group 1413374246.png" alt="" />
-          </div>
-        </div>
-        <div class="col-lg-6 right">
-          <div>
-            <h4>Subscribe on our newsletter to get our news</h4>
-            <p>Subscribe and stay up-to-date on the latest news.</p>
-            <div class="position-relative">
-              <input type="email" placeholder="Enter your email" />
-              <img class="mail-1" src="assets/images/mail-01.png" alt="" />
-              <input class="thm-btn" type="submit" value="Subscribe" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5">
-          <div>
-            <img src="assets/images/footer-logo.png" alt="" />
-            <p class="footer-desc">
+          <div class="col-lg-6">
+            <h2 class="banner-title">
+              Elevate Your Medical Practice with Expert Guidance
+            </h2>
+            <p class="banner-desc">
               Welcome to Health Lync, where we specialize in medical practice
               development for nurse practitioners and physician assistants
             </p>
+            <a href="" class="thm-btn"
+              >Get Started <img src="assets/images/arrowupright.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-6">
+            <div class="banner-img position-relative">
+              <img
+                class="banner-img-1"
+                src="assets/images/banner-img-1.png"
+                alt=""
+              />
+              <img
+                class="banner-img-2"
+                src="assets/images/banner-img-2.png"
+                alt=""
+              />
+              <img class="banner-img-3" src="assets/images/play.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="row">
-            <div class="col-lg-4">
-              <div class="footer-menu">
-                <h5>Company</h5>
-                <ul>
-                  <li><a href="">Home </a></li>
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Meet Our Team</a></li>
-                  <li><a href="">Practice Compliance</a></li>
-                  <li><a href="">Practice Startup</a></li>
-                  <li><a href=""> Practice Management</a></li>
-                </ul>
-              </div>
-            </div>
+      </div>
+    </section>
 
-            <div class="col-lg-4">
-              <div class="footer-menu">
-                <h5>Company</h5>
-                <ul>
-                  <li><a href="">Our Resource</a></li>
-                  <li><a href=""> Terms and Condition</a></li>
-                  <li><a href="">Privacy Policy</a></li>
-                  <li><a href="">Cookies Policy</a></li>
-                  <li><a href="">FAQs</a></li>
-                  <li><a href="">Contact Us</a></li>
-                </ul>
+    <!-- About section -->
+
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="assets/images/about-img.png" alt="" />
+          </div>
+          <div class="col-lg-6">
+            <h3 class="about-title">Learn About Health Lync</h3>
+            <p class="about-desc">
+              At Health Lync, we are committed to supporting nurse practitioners
+              and physician assistants in building successful medical practices.
+              With years of experience in the healthcare industry, our team of
+              experts understands the unique challenges and opportunities faced
+              by these professionals.
+            </p>
+            <a href="" class="thm-btn"
+              >Learn More <img src="assets/images/arrowupright.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servivce Section -->
+
+    <section class="service">
+      <div class="container">
+        <h4 class="service-sub-title">Our Services</h4>
+        <h2 class="service-title">
+          A Proactive Approach to Healthcare Quality Improvement
+        </h2>
+      </div>
+    </section>
+    <section class="container mt-220">
+      <div class="service-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide">
+            <img src="assets/images/002-healthcare 1.png" alt="" />
+            <h4>Healthcare Compliance</h4>
+            <p>
+              We conduct a comprehensive assessment of your practice to identify
+              areas for improvement.
+            </p>
+            <a href="" class="thm-btn-2"
+              >Read More <img src="assets/images/arrow-blue.png" alt=""
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/007-marketing 1.png" alt="" />
+            <h4>Marketing the Practice</h4>
+            <p>
+              Based on the assessment, we develop a tailored strategy to
+              optimize your practice's performance.
+            </p>
+            <a href="" class="thm-btn-2"
+              >Read More <img src="assets/images/arrow-blue.png" alt=""
+            /></a>
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/010-tax 1.png" alt="" />
+            <h4>Financial Projections</h4>
+            <p>
+              Our team works closely with you to implement the strategy,
+              providing guidance & support every step of the way.
+            </p>
+            <a href="" class="thm-btn-2"
+              >Read More <img src="assets/images/arrow-blue.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-btn-group">
+        <div class="service-swiper-prev button-prev">
+          <img src="assets/images/left.png" alt="" />
+        </div>
+        <div class="service-swiper-next button-next">
+          <img src="assets/images/right.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Expert Section -->
+
+    <section class="expert">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="expert-title">
+              Expert Support for Medical Practice Development
+            </h2>
+            <p class="expert-desc">
+              With years of experience in the healthcare industry, our team of
+              experts understands the unique challenges and opportunities
+            </p>
+            <div>
+              <div class="expert-content">
+                <div class="img-container">
+                  <img src="assets/images/001-connect 1.png" alt="" />
+                </div>
+                <div>
+                  <h5>Connect</h5>
+                  <p>Schedule your free consultation to discuss your goals.</p>
+                </div>
+              </div>
+              <div class="expert-content">
+                <div class="img-container">
+                  <img src="assets/images/005-project-plan 1.png" alt="" />
+                </div>
+                <div>
+                  <h5>Get a Plan</h5>
+                  <p>
+                    We propose a custom plan to help you gain control of your
+                    business.
+                  </p>
+                </div>
+              </div>
+              <div class="expert-content">
+                <div class="img-container">
+                  <img src="assets/images/002-market-analysis 1.png" alt="" />
+                </div>
+                <div>
+                  <h5>Thrive</h5>
+                  <p>
+                    Our team helps you achieve your goals and enjoy a work-life
+                    balance.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="footer-menu">
-                <h5>Contact Info.</h5>
-                <ul>
-                  <li>
-                    <a href=""><img src="assets/images/Call.png" alt="" />419-388-5409</a>
-                  </li>
-                  <li>
-                    <a href=""><img src="assets/images/Message.png" alt="" />healthlyncllc@gmail.com</a>
-                  </li>
-                  <li>
-                    <a href=""><img src="assets/images/Location (1).png" alt="" />Cincinnati, Ohio, USA</a>
-                  </li>
-                </ul>
-                <h5>Follow Us</h5>
-                <div>
-                  <ul class="footer-social">
-                    <li>
-                      <a href=""><img src="assets/images/footer-icon/Group 1000001506.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <img src="assets/images/footer-icon/Group 1000001507.png" alt="" />
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <img src="assets/images/footer-icon/Group 1000001516.png" alt="" /></a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <img src="assets/images/footer-icon/Group 1000001517.png" alt="" /></a>
-                    </li>
-                  </ul>
+          </div>
+          <div class="col-lg-6"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Practice Section -->
+    <section class="practice">
+      <div class="container">
+        <h2 class="title">
+          Nurse Practitioner & Physician Assistant Practice Specialists
+        </h2>
+        <a href="" class="thm-btn"
+          >Book A consultation <img src="assets/images/arrowupright.png" alt=""
+        /></a>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="practice-card">
+              <div class="img-container">
+                <img src="assets/images/doctor1.png" alt="" />
+              </div>
+              <div>
+                <h5>Solo Practice</h5>
+                <p>
+                  Hospital systems can benefit from our compliance auditing
+                  solutions for tracking risk and ensuring compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="practice-card">
+              <div class="img-container">
+                <img src="assets/images/group-people.png" alt="" />
+              </div>
+              <div>
+                <h5>Group Practice</h5>
+                <p>
+                  Hospital systems can benefit from our compliance auditing
+                  solutions for tracking risk and ensuring compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources -->
+
+    <section class="resources">
+      <div class="container">
+        <div class="header">
+          <h3 class="title">Our Recent Resources</h3>
+          <a href="" class="thm-btn"
+            >Book A consultation
+            <img src="assets/images/arrowupright.png" alt=""
+          /></a>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Increase Efficiency
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <a href="" class="thm-btn"
+                      >Learn More
+                      <img src="assets/images/arrowupright.png" alt="" /></a
+                    ><!-- /.thm-btn -->
+                  </div>
+                  <div class="col-lg-6">
+                    <img
+                      class="accordion-img"
+                      src="assets/images/image 1946.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Reduce Compliance Risk
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <a href="" class="thm-btn"
+                      >Learn More
+                      <img src="assets/images/arrowupright.png" alt="" /></a
+                    ><!-- /.thm-btn -->
+                  </div>
+                  <div class="col-lg-6">
+                    <img
+                      class="accordion-img"
+                      src="assets/images/image 1946.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Protect Providers
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <a href="" class="thm-btn"
+                      >Learn More
+                      <img src="assets/images/arrowupright.png" alt="" /></a
+                    ><!-- /.thm-btn -->
+                  </div>
+                  <div class="col-lg-6">
+                    <img
+                      class="accordion-img"
+                      src="assets/images/image 1946.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Risk Based Auditing
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <div class="accordion-content">
+                      <ul>
+                        <li>Coding & Documentation</li>
+                      </ul>
+                      <p>Audits protect revenue and reduce vulnerability.</p>
+                    </div>
+                    <a href="" class="thm-btn"
+                      >Learn More
+                      <img src="assets/images/arrowupright.png" alt="" /></a
+                    ><!-- /.thm-btn -->
+                  </div>
+                  <div class="col-lg-6">
+                    <img
+                      class="accordion-img"
+                      src="assets/images/image 1946.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <hr class="footer-line" />
-    <div class="container">
-      <p class="copyright">
-        Copyright © 2024 Health Lync | All rights reserved.
-      </p>
-    </div>
-  </footer>
+    </section>
 
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".client-swiper", {
-      speed: 400,
-      slidesPerView: 2,
-      spaceBetween: 50,
-    });
-    const swiper2 = new Swiper(".service-swiper", {
-      speed: 400,
-      slidesPerView: 3,
-      spaceBetween: 30,
-      // navigation: {
-      //   nextEl: '.service-swiper-next',
-      //   prevEl: '.service-swiper-prev',
-      // },
-    });
-  </script>
-</body>
+    <!-- Client-section -->
 
+    <section class="client">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <h4 class="title">Our Client Says Their Satisfaction</h4>
+          <div class="button-group d-flex gap-24">
+            <div class="button-prev">
+              <img src="assets/images/left.png" alt="" />
+            </div>
+            <div class="button-next">
+              <img src="assets/images/right.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="client-swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p class="client-message">
+                At Health Lync, we are committed to supporting nurse
+                practitioners and physician assistants in building successful
+                medical practices. With years of experience in the healthcare
+                industry, our team of experts understands the unique challenges
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-between align-items-center client-details"
+                >
+                  <img src="assets/images/Ellipse 3892.png" alt="" />
+                  <div class="client-info">
+                    <h6>Jenny Wilson</h6>
+                    <p>Jenny Wilson</p>
+                  </div>
+                </div>
+                <img src="assets/images/image 1947.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <p class="client-message">
+                At Health Lync, we are committed to supporting nurse
+                practitioners and physician assistants in building successful
+                medical practices. With years of experience in the healthcare
+                industry, our team of experts understands the unique challenges
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div
+                  class="d-flex justify-content-between align-items-center client-details"
+                >
+                  <img src="assets/images/Ellipse 3892.png" alt="" />
+                  <div class="client-info">
+                    <h6>Jenny Wilson</h6>
+                    <p>Jenny Wilson</p>
+                  </div>
+                </div>
+                <img src="assets/images/image 1947.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter -->
+
+    <section class="newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="left">
+              <img src="assets/images/Group 1413374246.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6 right">
+            <div>
+              <h4>Subscribe on our newsletter to get our news</h4>
+              <p>Subscribe and stay up-to-date on the latest news.</p>
+              <div class="position-relative">
+                <input type="email" placeholder="Enter your email" />
+                <img class="mail-1" src="assets/images/mail-01.png" alt="" />
+                <input class="thm-btn" type="submit" value="Subscribe" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div>
+              <img src="assets/images/footer-logo.png" alt="" />
+              <p class="footer-desc">
+                Welcome to Health Lync, where we specialize in medical practice
+                development for nurse practitioners and physician assistants
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="footer-menu">
+                  <h5>Company</h5>
+                  <ul>
+                    <li><a href="">Home </a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Meet Our Team</a></li>
+                    <li><a href="">Practice Compliance</a></li>
+                    <li><a href="">Practice Startup</a></li>
+                    <li><a href=""> Practice Management</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="footer-menu">
+                  <h5>Company</h5>
+                  <ul>
+                    <li><a href="">Our Resource</a></li>
+                    <li><a href=""> Terms and Condition</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Cookies Policy</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="footer-menu">
+                  <h5>Contact Info.</h5>
+                  <ul>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="assets/images/Call.png"
+                          alt=""
+                        />419-388-5409</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="assets/images/Message.png"
+                          alt=""
+                        />healthlyncllc@gmail.com</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img
+                          src="assets/images/Location (1).png"
+                          alt=""
+                        />Cincinnati, Ohio, USA</a
+                      >
+                    </li>
+                  </ul>
+                  <h5>Follow Us</h5>
+                  <div>
+                    <ul class="footer-social">
+                      <li>
+                        <a href=""
+                          ><img
+                            src="assets/images/footer-icon/Group 1000001506.png"
+                            alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="assets/images/footer-icon/Group 1000001507.png"
+                            alt=""
+                          />
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="assets/images/footer-icon/Group 1000001516.png"
+                            alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="">
+                          <img
+                            src="assets/images/footer-icon/Group 1000001517.png"
+                            alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="footer-line" />
+      <div class="container">
+        <p class="copyright">
+          Copyright © 2024 Health Lync | All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".client-swiper", {
+        speed: 400,
+        slidesPerView: 2,
+        spaceBetween: 50,
+      });
+      const swiper2 = new Swiper(".service-swiper", {
+        speed: 400,
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // navigation: {
+        //   nextEl: '.service-swiper-next',
+        //   prevEl: '.service-swiper-prev',
+        // },
+      });
+    </script>
+  </body>
 </html>
