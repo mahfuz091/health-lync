@@ -15,6 +15,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden !important;
+}
 
 a {
   text-decoration: none !important;
@@ -224,6 +227,9 @@ p {
 }
 
 /* About Section Start */
+.about {
+  padding: 120px 0;
+}
 
 .about .thm-btn {
   font-style: normal;
@@ -288,8 +294,20 @@ p {
   text-align: center;
   letter-spacing: -0.01em;
   color: #ffffff;
-  width: 857px;
+  max-width: 857px;
   margin: 10px auto 60px;
+}
+@media (min-width: 1600px) {
+  .swiper {
+    overflow: visible !important;
+  }
+}
+
+/* .service-swiper .swiper-wrapper {
+  margin-bottom: 100px;
+} */
+.swiper-button-lock {
+  display: flex !important;
 }
 
 .service-swiper .swiper-slide {
@@ -444,6 +462,9 @@ p {
   padding: 80px 0 102px 0;
   text-align: center;
 }
+.practice .row {
+  --bs-gutter-y: 1.5rem;
+}
 
 .practice .title {
   font-style: normal;
@@ -453,7 +474,7 @@ p {
   text-align: center;
   letter-spacing: -0.01em;
   color: #ffffff;
-  width: 893px;
+  max-width: 893px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -646,8 +667,9 @@ button:focus:not(:focus-visible) {
 }
 
 .accordion-img {
-  width: 556px;
-  height: 355px;
+  /* width: 556px;
+  height: 355px; */
+  max-width: 100%;
 }
 
 /* client section */
@@ -666,7 +688,7 @@ button:focus:not(:focus-visible) {
   line-height: 60px;
   letter-spacing: -0.01em;
   color: #1b1c1c;
-  width: 517px;
+  max-width: 517px;
   margin-bottom: 40px;
 }
 
@@ -881,4 +903,82 @@ button:focus:not(:focus-visible) {
 
   text-align: center;
   letter-spacing: -0.005em;
+}
+
+@media (max-width: 575px) {
+  .banner .banner-img-2 {
+    top: 140px;
+    left: -10px;
+  }
+  .banner-title {
+    margin-top: 0px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .banner-desc {
+    font-size: 16px;
+  }
+  .banner {
+    background: #33b5cc;
+  }
+  .banner .banner-img-3 {
+    position: absolute;
+    top: 258px;
+    left: 112px;
+  }
+  .about {
+    padding: 80px 0;
+  }
+  .service .service-title {
+    font-size: 30px;
+  }
+  .service-swiper .swiper-wrapper {
+    margin-bottom: 100px !important;
+  }
+  .service .swiper-btn-group {
+    margin-top: 0 !important;
+  }
+
+  .client .container > .d-flex {
+    flex-direction: column;
+  }
+  .resources .container .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .accordion {
+    padding: 0 20px;
+  }
+  .resources .accordion-button {
+    font-size: 24px;
+  }
+  .resources .accordion-content ul li {
+    font-size: 18px;
+  }
+  .resources .accordion-content p {
+    font-size: 14px;
+  }
+  .resources .container {
+    padding: 60px 0;
+  }
+  .client .container {
+    margin-top: 0;
+  }
+  .client .container h4 {
+    font-size: 36px;
+  }
+  .client .button-group {
+    margin-bottom: 20px;
+  }
+  .client .container .client-swiper .client-message {
+    font-size: 16px;
+  }
+  .client .client-details {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .newsletter .container .right {
+    padding: 80px 60px 80px 60px;
+  }
 }
