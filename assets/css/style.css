@@ -290,7 +290,7 @@ p {
     left: -121px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   .banner {
     padding-bottom: 130px;
   }
@@ -299,6 +299,10 @@ p {
 /* About Section Start */
 .about {
   padding: 120px 0;
+  overflow-x: hidden;
+}
+.about .row {
+  --bs-gutter-y: 1.5rem;
 }
 
 .about .thm-btn {
@@ -463,6 +467,12 @@ p {
 .service-swiper-next:hover {
   /* Color Plate/01 */
   background: rgb(61, 217, 245);
+}
+
+@media (min-width: 575px) {
+  .service-swiper .swiper-wrapper {
+    margin-bottom: 50px;
+  }
 }
 
 /* Expert */
@@ -977,15 +987,24 @@ button:focus:not(:focus-visible) {
 
 @media (max-width: 575px) {
   .about {
-    padding: 80px 0;
+    padding: 60px 0;
   }
+  .about .about-title {
+    margin-top: 0;
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .service {
+    padding: 40px 0 120px 0;
+  }
+
   .service .service-title {
     font-size: 30px;
   }
   .service-swiper .swiper-wrapper {
     margin-bottom: 100px !important;
   }
-  .service .swiper-btn-group {
+  .swiper-btn-group {
     margin-top: 0 !important;
   }
 
