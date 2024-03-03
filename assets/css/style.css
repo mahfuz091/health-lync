@@ -477,14 +477,20 @@ p {
 
 /* Expert */
 .expert {
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  padding: 80px 0;
+}
+.expert .col-lg-6 .row {
+  --bs-gutter-y: 30px;
 }
 
 .expert-title {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  /* font-size: 48px; */
+  /* line-height: 60px; */
+  font-size: 35px;
+  line-height: 50px;
   letter-spacing: -0.01em;
   color: #1b1c1c;
   margin-bottom: 20px;
@@ -533,6 +539,20 @@ p {
   color: #545454;
   width: 316px;
   margin-bottom: 0;
+}
+.expert .expert-img {
+  box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 30px;
+}
+
+@media (min-width: 575px) {
+  .expert {
+    padding: 120px 0;
+  }
+  .expert .expert-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 /* Practice */
