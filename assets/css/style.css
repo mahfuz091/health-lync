@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   overflow-x: hidden !important;
 }
@@ -151,9 +152,11 @@ p {
   font-weight: 500;
   color: #fff;
 }
+
 .offcanvas-header {
   padding-right: 30px !important;
 }
+
 .offcanvas-btn {
   border: none;
   background: none;
@@ -162,6 +165,7 @@ p {
 .offcanvas-body ul {
   list-style: none;
 }
+
 .offcanvas-body ul li {
   margin-bottom: 20px;
 }
@@ -175,6 +179,7 @@ p {
   padding-top: 40px;
   padding-bottom: 80px;
 }
+
 .banner .row {
   --bs-gutter-y: 1.5rem;
 }
@@ -249,17 +254,20 @@ p {
     position: absolute;
   }
 }
+
 @media (min-width: 768px) {
   .banner-title {
     margin-top: 60px;
     font-size: 67px;
     line-height: 74px;
   }
+
   .banner-desc {
     font-size: 18px;
     line-height: 34px;
   }
 }
+
 @media (min-width: 1024px) {
   .banner-title {
     /* margin-top: 60px; */
@@ -267,6 +275,7 @@ p {
     line-height: 54px;
   }
 }
+
 @media (min-width: 1200px) {
   .banner {
     background: url(/assets/images/banner-bg-2.png);
@@ -276,20 +285,24 @@ p {
     padding-top: 84px;
     padding-bottom: 230px;
   }
+
   .banner-title {
     margin-top: 60px;
     font-size: 67px;
     line-height: 74px;
   }
+
   .banner .banner-img-3 {
     top: 424px;
     left: -1px;
   }
+
   .banner .banner-img-2 {
     top: 304px;
     left: -121px;
   }
 }
+
 @media (min-width: 1440px) {
   .banner {
     padding-bottom: 130px;
@@ -301,6 +314,7 @@ p {
   padding: 120px 0;
   overflow-x: hidden;
 }
+
 .about .row {
   --bs-gutter-y: 1.5rem;
 }
@@ -371,11 +385,12 @@ p {
   max-width: 857px;
   margin: 10px auto 60px;
 }
-@media (min-width: 1600px) {
+
+/* @media (min-width: 1600px) {
   .swiper {
     overflow: visible !important;
   }
-}
+} */
 
 /* .service-swiper .swiper-wrapper {
   margin-bottom: 100px;
@@ -480,6 +495,7 @@ p {
   /* padding: 120px 0; */
   padding: 80px 0;
 }
+
 .expert .col-lg-6 .row {
   --bs-gutter-y: 30px;
 }
@@ -540,6 +556,7 @@ p {
   width: 316px;
   margin-bottom: 0;
 }
+
 .expert .expert-img {
   box-shadow: 10px 10px 80px 0px rgba(0, 0, 0, 0.08);
   border-radius: 30px;
@@ -549,6 +566,7 @@ p {
   .expert {
     padding: 120px 0;
   }
+
   .expert .expert-title {
     font-size: 48px;
     line-height: 60px;
@@ -559,9 +577,11 @@ p {
 
 .practice {
   background: linear-gradient(18.04deg, #34bcd4 13.81%, #33b5cc 86.77%);
-  padding: 80px 0 102px 0;
+  /* padding: 80px 0 102px 0; */
+  padding: 30px 0 50px 0;
   text-align: center;
 }
+
 .practice .row {
   --bs-gutter-y: 1.5rem;
 }
@@ -569,14 +589,28 @@ p {
 .practice .title {
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
+  /* font-size: 48px; */
+  font-size: 35px;
+  /* line-height: 60px; */
+  line-height: 50px;
   text-align: center;
   letter-spacing: -0.01em;
   color: #ffffff;
   max-width: 893px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .practice {
+    padding: 80px 0 102px 0;
+  }
+
+  .practice .title {
+    font-size: 48px;
+
+    line-height: 60px;
+  }
 }
 
 .practice .thm-btn {
@@ -598,10 +632,23 @@ p {
 
 .practice .practice-card {
   display: flex;
+  flex-direction: column;
   padding: 30px;
   background: #ffffff;
   border-radius: 20px;
   gap: 24px;
+}
+
+@media (max-width: 460px) {
+  .practice .img-container {
+    text-align: left;
+  }
+}
+
+@media(min-width:460px) {
+  .practice .practice-card {
+    flex-direction: row;
+  }
 }
 
 .practice .practice-card h5 {
@@ -732,7 +779,7 @@ button:focus:not(:focus-visible) {
   border-top-right-radius: 0 !important;
 }
 
-.accordion-item:last-of-type > .accordion-header .accordion-button.collapsed {
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed {
   border-bottom-right-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
 }
@@ -774,12 +821,18 @@ button:focus:not(:focus-visible) {
 
 /* client section */
 
-.client .container {
+.client>.container.swiper {
   padding: 40px !important;
-  background: #f3fbfd;
+  /* background: #f3fbfd; */
+  background-image: url(/assets/images/sh.png);
   margin-top: 120px;
   border-radius: 30px;
+  position: relative;
+
 }
+
+
+
 
 .client .container h4 {
   font-style: normal;
@@ -814,8 +867,8 @@ button:focus:not(:focus-visible) {
   gap: 24px;
 }
 
-.client .button-group .button-prev,
-.client .button-group .button-next {
+.client .button-group .client-button-prev,
+.client .button-group .client-button-next {
   background: #ffffff;
   width: 68px;
   height: 68px;
@@ -826,14 +879,19 @@ button:focus:not(:focus-visible) {
   cursor: pointer;
 }
 
-.client .button-group .button-prev:hover,
-.client .button-group .button-next:hover {
+.client .button-group .client-button-prev:hover,
+.client .button-group .client-button-next:hover {
   background: #ff8200;
 }
 
-.client .button-group .button-prev:hover img svg path,
-.client .button-group .button-next:hover img svg path {
+.client .button-group .client-button-prev img path:hover,
+.client .button-group .client-button-next img path:hover {
   stroke: white;
+  fill: white;
+}
+
+.client-swiper {
+  background-image: url(/assets/images/shape.png);
 }
 
 .client-info h6 {
@@ -846,7 +904,7 @@ button:focus:not(:focus-visible) {
   padding-top: 4px;
 }
 
-.client .container .client-swiper .swiper-slide {
+.client .client-swiper .swiper-slide {
   padding: 30px;
   background: #ffffff;
   /* S/1 */
@@ -1009,11 +1067,13 @@ button:focus:not(:focus-visible) {
   .about {
     padding: 60px 0;
   }
+
   .about .about-title {
     margin-top: 0;
     font-size: 38px;
     line-height: 50px;
   }
+
   .service {
     padding: 40px 0 120px 0;
   }
@@ -1021,51 +1081,65 @@ button:focus:not(:focus-visible) {
   .service .service-title {
     font-size: 30px;
   }
+
   .service-swiper .swiper-wrapper {
     margin-bottom: 100px !important;
   }
+
   .swiper-btn-group {
     margin-top: 0 !important;
   }
 
-  .client .container > .d-flex {
+  .client .container>.d-flex {
     flex-direction: column;
   }
+
   .resources .container .header {
     flex-direction: column;
     text-align: center;
   }
+
   .accordion {
     padding: 0 20px;
   }
+
   .resources .accordion-button {
     font-size: 24px;
   }
+
   .resources .accordion-content ul li {
     font-size: 18px;
   }
+
   .resources .accordion-content p {
     font-size: 14px;
   }
+
   .resources .container {
     padding: 60px 0;
   }
+
   .client .container {
     margin-top: 0;
   }
+
   .client .container h4 {
     font-size: 36px;
   }
+
   .client .button-group {
     margin-bottom: 20px;
   }
+
   .client .container .client-swiper .client-message {
     font-size: 16px;
   }
+
   .client .client-details {
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 991px) {
   .newsletter .container .right {
     padding: 80px 60px 80px 60px;
